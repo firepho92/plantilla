@@ -5,7 +5,9 @@
 
 .landingSection {
   height: 100vh;
-  width: 100%
+  width: 100%;
+  min-width: 640px;
+  min-height: 480px;
 }
 
 .landingSectionColumns {
