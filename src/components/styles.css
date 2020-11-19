@@ -1,0 +1,19 @@
+.normalize {
+  padding: 0;
+  margin: 0;
+}
+
+.landingSection {
+  height: 100vh;
+  width: 100%
+}
+
+.landingSectionColumns {
+  display: flex;
+  flex-direction: column;
+}
+
+.landingSectionRows {
+  display: flex;
+  flex-direction: row;
+}
