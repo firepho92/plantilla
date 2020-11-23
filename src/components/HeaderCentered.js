@@ -3,7 +3,7 @@ import HeaderLogo from './HeaderLogo'
 
 export default function HeaderCentered() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignContent: 'center', background: '#900', height: '10vh', minHeight: '70px' }}>
+    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignContent: 'center', background: '#900', height: '10vh', minHeight: '70px', zIndex:1000 }}>
       <LeftSideHeader />
       <CenterHeader />
       <RightSideHeader />

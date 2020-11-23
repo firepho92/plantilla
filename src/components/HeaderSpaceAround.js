@@ -3,7 +3,7 @@ import HeaderLogo from './HeaderLogo'
 
 export default function HeaderSpaceAround() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', background:'#900', height: '10vh', minHeight: '70px' }}>
+    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', background:'#900', height: '10vh', minHeight: '70px', zIndex: 100 }}>
       <LeftSideHeader />
       <RightSideHeader />
     </div>
