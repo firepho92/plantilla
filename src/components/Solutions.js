@@ -7,10 +7,10 @@ export default function Solutions(props) {
         </div>
         <div className='rows'>
           <div className='is-half'>
-            
+            a
           </div>
           <div className='is-half'>
-            
+            a
           </div>
         </div>
       </div>
