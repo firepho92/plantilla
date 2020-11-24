@@ -5,12 +5,12 @@ export default function Solutions(props) {
         <div className='block-title align-center'>
           título
         </div>
-        <div className='columns'>
+        <div className='rows'>
           <div className='is-half'>
-            a
+            
           </div>
           <div className='is-half'>
-            a
+            
           </div>
         </div>
       </div>
