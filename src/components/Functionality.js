@@ -31,8 +31,16 @@ export default function Functionality() {
             </div>
           </div>
           <div className='is-half'>
-            <div className="grid">
-              { images.map((image, index) => <div key={ index } className="grid-item2x2" onClick={ () => handleClick(image) }></div>) }
+            <div className="rows">
+              <div className="grid">
+                { images.map((image, index) => <div key={ index } className="grid-item2x2" onClick={ () => handleClick(image) }></div>) }
+              </div>
+              <div className='logos'>
+                <div className="logo">logo</div>
+                <div className="logo">logo</div>
+                <div className="logo">logo</div>
+                <div className="logo">logo</div>
+              </div>
             </div>
           </div>
         </div>

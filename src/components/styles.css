@@ -10,6 +10,7 @@
   min-width: 640px;
   min-height: 480px;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .columns {
@@ -142,6 +143,28 @@
   overflow: hidden;
 }
 
+.logos {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  flex: 1 1 25%;
+  max-width: 25%;
+  padding: 0 1em 0 1em;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .grid-item2x2 {
   display: flex;
   flex: 1 1 50%;
@@ -164,3 +187,4 @@
   box-sizing: border-box;
   border: 1px solid #000
 }
+
