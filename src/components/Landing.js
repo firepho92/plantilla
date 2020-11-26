@@ -4,6 +4,8 @@ import Solutions from './Solutions'
 import Functionality from './Functionality'
 import Content from './Content'
 import Testimonios from './Testimonios'
+import ProgramasSociales from './ProgramasSociales'
+import TiendasPlataformasFooter from './TiendasPlataformasFooter'
 import './styles.css'
 
 export default function Landing() {
@@ -42,6 +44,8 @@ export default function Landing() {
       <Functionality />
       <Content />
       <Testimonios />
+      <ProgramasSociales />
+      <TiendasPlataformasFooter />
     </div>
   )
 }
