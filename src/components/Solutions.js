@@ -2,7 +2,7 @@ export default function Solutions(props) {
   return(
     <div className='landing-section'>
       <div className='rows'>
-        <div className='block-title align-center'>
+        <div className='block-title align-center title'>
           título
         </div>
         <div className='rows'>

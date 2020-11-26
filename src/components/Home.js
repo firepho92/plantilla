@@ -17,7 +17,7 @@ export default function Home() {
           <p className='text'>
             asdasdasdasdasd
           </p>
-          <button className='button-big'>call to action</button>
+          <button className='button button-big'>call to action</button>
         </div>
         <div className='is-half' style={ halfBackgroundImage }>
         </div>

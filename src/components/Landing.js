@@ -2,11 +2,13 @@ import React from 'react'
 import Home from './Home'
 import Solutions from './Solutions'
 import Functionality from './Functionality'
+import Content from './Content'
+import Testimonios from './Testimonios'
 import './styles.css'
 
 export default function Landing() {
-  const [currentSection, setCurrentSection] = React.useState(0)
-  const [prev, setPrev] = React.useState(0)
+  //const [currentSection, setCurrentSection] = React.useState(0)
+  //const [prev, setPrev] = React.useState(0)
 
   /*React.useEffect(() => {
     window.addEventListener('scroll', handleScroll)
@@ -38,6 +40,8 @@ export default function Landing() {
       <Home />
       <Solutions />
       <Functionality />
+      <Content />
+      <Testimonios />
     </div>
   )
 }
