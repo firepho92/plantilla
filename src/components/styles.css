@@ -40,10 +40,165 @@
   box-sizing: border-box;
 }
 
+.header-centered {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  height: 10vh;
+  min-height: 70px;
+  min-width: 640px;
+  z-index:1000;
+}
+
+.left-side-header {
+  display: flex;
+  flex: 10;
+  order: 1;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background: #f00;
+  height: 100%
+}
+
+.right-side-header {
+  display: flex;
+  flex: 10;
+  order: 3;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background: #00f;
+  height: 100%
+}
+
+.center-side-header {
+  display: flex;
+  flex: 3;
+  order: 2;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%
+}
+
+.header-logo {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  min-width: 100px;
+  text-align: center;
+  margin: 0em 1em 0em 1em
+}
+
+.header-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  order: 1;
+  min-width: 90px;
+  width: 16%;
+  margin: 0em 0.5em 0em 0.5em
+}
+
 .with-header {
   position: absolute;
   top: 10vh;
   height: calc(100vh - 10vh) !important;
+}
+/*
+hamburger CSS
+*/
+.hamburger {
+  display: none
+}
+
+@media (max-width: 780px) {
+  .header-logo {
+    background: #090;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    max-width: 100px;
+    text-align: center;
+    margin: 0em 1em 0em 1em
+  }
+
+  .hamburger {
+    display: inline-block;
+    height: 100%;
+    width: 16%;
+    max-width: 16%;
+    min-width: 90px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    flex: 1;
+    order: 2;
+    background-color: hsl(210, 79%, 44%);
+    margin-left: 1em
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .header-item {
+    display: none;
+  }
+
+  .header-centered {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    height: 10vh;
+    min-height: 70px;
+    min-width: 640px;
+    z-index:1000;
+    padding: 0 1em 0 1em;
+    box-sizing: border-box;
+  }
+
+  .right-side-header {
+    display: none;
+  }
+
+  .left-side-header {
+    display: none;
+  }
+
+  .center-side-header {
+    display: flex;
+    order: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%
+  }
 }
 
 @media (max-height: 700px) {

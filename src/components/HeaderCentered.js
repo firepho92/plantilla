@@ -1,9 +1,11 @@
+import React from 'react'
 import HeaderItem from './HeaderItem'
 import HeaderLogo from './HeaderLogo'
 
 export default function HeaderCentered() {
+
   return (
-    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignContent: 'center', background: '#900', height: '10vh', minHeight: '70px', zIndex:1000 }}>
+    <div className='header-centered'>
       <LeftSideHeader />
       <CenterHeader />
       <RightSideHeader />
@@ -12,21 +14,34 @@ export default function HeaderCentered() {
 }
 
 const LeftSideHeader = () => (
-  <div style={{ display: 'flex', flex: 10, order: 1, flexDirection: 'row', justifyContent: 'flex-end', alignItems: 'center', background: '#f00', height: '100%' }}>
+  <div className='left-side-header'>
     <HeaderItem />
     <HeaderItem />
     <HeaderItem />
   </div>
 )
 
-const CenterHeader = () => (
-  <div style={{ display: 'flex', flex: 3, order: 2, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', background: '#0f0', height: '100%' }}>
-    <HeaderLogo />
-  </div>
-)
+const CenterHeader = () => {
+  const [toggle, setToggle] = React.useState(false);
+
+  const handleClick = () => {
+    setToggle(!toggle)
+  }
+
+  return (
+    <div className='center-side-header'>
+      <HeaderLogo />
+      <div className={ 'hamburguer ' + (toggle ? 'change' : '') } onClick={ handleClick }>
+        <div className="bar1"></div>
+        <div className="bar2"></div>
+        <div className="bar3"></div>
+      </div>
+    </div>
+  )
+}
 
 const RightSideHeader = () => (
-  <div style={{ display: 'flex', flex: 10, order: 3, flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', background: '#00f', height: '100%' }}>
+  <div className='right-side-header'>
     <HeaderItem />
     <HeaderItem />
     <HeaderItem />
